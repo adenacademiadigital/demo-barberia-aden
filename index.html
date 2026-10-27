@@ -9,14 +9,12 @@
     <!-- FontAwesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-        .gold-gradient {
-            background: linear-gradient(135deg, #d4af37 0%, #f3e5ab 50%, #aa7c11 100%);
-        }
-        .text-gold {
-            color: #d4af37;
-        }
-        .bg-gold {
-            background-color: #d4af37;
+        .text-gold { color: #d4af37; }
+        .bg-gold { background-color: #d4af37; }
+        .hero-bg {
+            background: linear-gradient(to bottom, rgba(9, 9, 11, 0.8), rgba(9, 9, 11, 0.95)), url('https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&q=80&w=1200');
+            background-size: cover;
+            background-position: center;
         }
     </style>
 </head>
@@ -37,15 +35,15 @@
         </div>
     </header>
 
-    <!-- HERO SECTION -->
-    <section class="relative bg-zinc-900 py-16 px-4 text-center border-b border-zinc-800">
+    <!-- HERO SECTION CON FONDO FOTOGRÁFICO -->
+    <section class="hero-bg py-20 px-4 text-center border-b border-zinc-800">
         <div class="max-w-3xl mx-auto">
-            <span class="text-gold font-semibold text-sm uppercase tracking-widest bg-zinc-800 px-3 py-1 rounded-full border border-zinc-700">Carepa, Antioquia</span>
+            <span class="text-gold font-semibold text-sm uppercase tracking-widest bg-zinc-900/80 px-3 py-1 rounded-full border border-zinc-700">Carepa, Antioquia</span>
             <h1 class="text-4xl md:text-5xl font-extrabold text-white mt-4 mb-4 leading-tight">
                 Cortes de Autor, Barba Tradicional y Estilo Único
             </h1>
-            <p class="text-gray-400 text-lg mb-8">
-                Reserva tu turno en línea en menos de 1 minuto y evita filas. Atención personalizada para el hombre moderno.
+            <p class="text-gray-300 text-lg mb-8">
+                Reserva tu turno en línea en menos de 1 minuto y evita filas. Atención especializada para el hombre moderno.
             </p>
             <div class="flex flex-col sm:flex-row justify-center gap-4">
                 <a href="#servicios" class="bg-gold text-zinc-950 font-bold px-6 py-3 rounded-xl shadow-lg hover:bg-yellow-500 transition text-lg">
@@ -53,24 +51,45 @@
                 </a>
                 <a href="https://wa.me/573000000000?text=Hola,%20quiero%20agendar%20mi%20cita%20para%20hoy." 
                    target="_blank" 
-                   class="bg-zinc-800 text-white font-semibold px-6 py-3 rounded-xl border border-zinc-700 hover:bg-zinc-700 transition text-lg flex items-center justify-center gap-2">
+                   class="bg-zinc-900/90 text-white font-semibold px-6 py-3 rounded-xl border border-zinc-700 hover:bg-zinc-800 transition text-lg flex items-center justify-center gap-2">
                     <i class="fa-brands fa-whatsapp text-green-500 text-xl"></i> Agendar por WhatsApp
                 </a>
             </div>
         </div>
     </section>
 
+    <!-- SECCIÓN DE GALERÍA DE TRABAJOS (NUEVA) -->
+    <section class="max-w-5xl mx-auto px-4 py-12">
+        <h2 class="text-2xl md:text-3xl font-bold text-center text-white mb-2">Nuestros Trabajos</h2>
+        <p class="text-center text-gray-400 mb-8">Calidad impecable y estilo en cada detalle</p>
+        
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+            <div class="overflow-hidden rounded-xl border border-zinc-800 bg-zinc-900 h-48">
+                <img src="https://images.unsplash.com/photo-1622286342621-4bd786c2447c?auto=format&fit=crop&q=80&w=500" alt="Corte de cabello" class="w-full h-full object-cover hover:scale-105 transition duration-300">
+            </div>
+            <div class="overflow-hidden rounded-xl border border-zinc-800 bg-zinc-900 h-48">
+                <img src="https://images.unsplash.com/photo-1599351431202-1e0f0137899a?auto=format&fit=crop&q=80&w=500" alt="Barba perfilada" class="w-full h-full object-cover hover:scale-105 transition duration-300">
+            </div>
+            <div class="overflow-hidden rounded-xl border border-zinc-800 bg-zinc-900 h-48">
+                <img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&q=80&w=500" alt="Estilo moderno" class="w-full h-full object-cover hover:scale-105 transition duration-300">
+            </div>
+            <div class="overflow-hidden rounded-xl border border-zinc-800 bg-zinc-900 h-48">
+                <img src="https://images.unsplash.com/photo-1512864082144-843f4ad825cb?auto=format&fit=crop&q=80&w=500" alt="Barber shop" class="w-full h-full object-cover hover:scale-105 transition duration-300">
+            </div>
+        </div>
+    </section>
+
     <!-- SERVICIOS -->
-    <section id="servicios" class="max-w-5xl mx-auto px-4 py-12">
-        <h2 class="text-2xl md:text-3xl font-bold text-center text-white mb-2">Nuestros Servicios</h2>
-        <p class="text-center text-gray-400 mb-8">Selecciona el servicio que necesitas y agenda directamente</p>
+    <section id="servicios" class="max-w-5xl mx-auto px-4 py-8">
+        <h2 class="text-2xl md:text-3xl font-bold text-center text-white mb-2">Menú de Servicios</h2>
+        <p class="text-center text-gray-400 mb-8">Selecciona el servicio que deseas y agenda con un toque</p>
 
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
             <!-- Servicio 1 -->
             <div class="bg-zinc-900 border border-zinc-800 p-6 rounded-2xl flex justify-between items-center hover:border-zinc-700 transition">
                 <div>
                     <h3 class="text-xl font-bold text-white">Corte Urbano & Fade Premium</h3>
-                    <p class="text-gray-400 text-sm mt-1">Incluye asesoría de imagen, lavado y perfilado.</p>
+                    <p class="text-gray-400 text-sm mt-1">Incluye asesoría, lavado y perfilado.</p>
                     <span class="inline-block text-gold font-bold text-lg mt-2">$25.000 COP</span>
                 </div>
                 <a href="https://wa.me/573000000000?text=Hola,%20quiero%20agendar:%20Corte%20Urbano%20%26%20Fade%20Premium" 
@@ -84,7 +103,7 @@
             <div class="bg-zinc-900 border border-zinc-800 p-6 rounded-2xl flex justify-between items-center hover:border-zinc-700 transition">
                 <div>
                     <h3 class="text-xl font-bold text-white">Barba a Toalla Caliente</h3>
-                    <p class="text-gray-400 text-sm mt-1">Ritual de hidratación, vapor y perfilado a navaja.</p>
+                    <p class="text-gray-400 text-sm mt-1">Ritual de hidratación y perfilado a navaja.</p>
                     <span class="inline-block text-gold font-bold text-lg mt-2">$20.000 COP</span>
                 </div>
                 <a href="https://wa.me/573000000000?text=Hola,%20quiero%20agendar:%20Barba%20a%20Toalla%20Caliente" 
@@ -99,7 +118,7 @@
                 <span class="absolute top-0 right-0 bg-gold text-zinc-950 text-xs font-bold px-3 py-1 rounded-bl-lg uppercase">Recomendado</span>
                 <div>
                     <h3 class="text-xl font-bold text-white">Combo Real (Corte + Barba)</h3>
-                    <p class="text-gray-400 text-sm mt-1">Experiencia completa + mascarilla negra exfoliante.</p>
+                    <p class="text-gray-400 text-sm mt-1">Experiencia completa + mascarilla exfoliante.</p>
                     <span class="inline-block text-gold font-bold text-lg mt-2">$40.000 COP</span>
                 </div>
                 <a href="https://wa.me/573000000000?text=Hola,%20quiero%20agendar:%20Combo%20Real%20(Corte%20%2B%20Barba)" 
@@ -134,19 +153,19 @@
                 </h3>
                 <p class="text-gray-400 mt-1">Zona Central, Carepa - Antioquia</p>
                 <p class="text-gray-400 text-sm mt-2">
-                    <i class="fa-regular fa-clock text-gold"></i> Lunes a Sábado: 8:00 AM - 8:00 PM | Domingo: 9:00 AM - 2:00 PM
+                    <i class="fa-regular fa-clock text-gold"></i> Lunes a Sábado: 8:00 AM - 8:00 PM
                 </p>
             </div>
-            <a href="https://wa.me/573000000000?text=Hola,%20necesito%20la%20ubicacion%20exacta%20de%20la%20barberia." 
+            <a href="https://wa.me/573000000000?text=Hola,%20necesito%20la%20ubicacion%20exacta." 
                target="_blank" 
                class="bg-zinc-800 hover:bg-zinc-700 text-white px-5 py-3 rounded-xl border border-zinc-700 text-sm font-semibold transition">
-                Ver Mapa / Cómo Llegar
+                Ver Cómo Llegar
             </a>
         </div>
     </section>
 
     <!-- BOTÓN FLOTANTE DE WHATSAPP (PELUQUERÍA) -->
-    <a href="https://wa.me/573000000000?text=Hola,%20Barber%20%26%20Spa%20Club.%20Quiero%20consultar%20disponibilidad%20de%20turnos." 
+    <a href="https://wa.me/573000000000?text=Hola,%20Barber%20%26%20Spa%20Club.%20Quiero%20consultar%20disponibilidad." 
        target="_blank" 
        class="fixed bottom-6 right-6 z-50 bg-green-500 hover:bg-green-600 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-2xl transition-all transform hover:scale-110">
         <i class="fa-brands fa-whatsapp text-3xl"></i>
