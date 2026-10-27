@@ -11,11 +11,6 @@
     <style>
         .text-gold { color: #d4af37; }
         .bg-gold { background-color: #d4af37; }
-        .hero-bg {
-            background: linear-gradient(to bottom, rgba(9, 9, 11, 0.8), rgba(9, 9, 11, 0.95)), url('https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&q=80&w=1200');
-            background-size: cover;
-            background-position: center;
-        }
     </style>
 </head>
 <body class="bg-zinc-950 text-gray-100 font-sans antialiased pb-24">
@@ -35,26 +30,42 @@
         </div>
     </header>
 
-    <!-- HERO SECTION CON FONDO FOTOGRÁFICO -->
-    <section class="hero-bg py-20 px-4 text-center border-b border-zinc-800">
-        <div class="max-w-3xl mx-auto">
-            <span class="text-gold font-semibold text-sm uppercase tracking-widest bg-zinc-900/80 px-3 py-1 rounded-full border border-zinc-700">Carepa, Antioquia</span>
-            <h1 class="text-4xl md:text-5xl font-extrabold text-white mt-4 mb-4 leading-tight">
-                Cortes de Autor, Barba Tradicional y Estilo Único
-            </h1>
-            <p class="text-gray-300 text-lg mb-8">
-                Reserva tu turno en línea en menos de 1 minuto y evita filas. Atención especializada para el hombre moderno.
-            </p>
-            <div class="flex flex-col sm:flex-row justify-center gap-4">
-                <a href="#servicios" class="bg-gold text-zinc-950 font-bold px-6 py-3 rounded-xl shadow-lg hover:bg-yellow-500 transition text-lg">
-                    Ver Servicios y Precios
-                </a>
-                <a href="https://wa.me/573000000000?text=Hola,%20quiero%20agendar%20mi%20cita%20para%20hoy." 
-                   target="_blank" 
-                   class="bg-zinc-900/90 text-white font-semibold px-6 py-3 rounded-xl border border-zinc-700 hover:bg-zinc-800 transition text-lg flex items-center justify-center gap-2">
-                    <i class="fa-brands fa-whatsapp text-green-500 text-xl"></i> Agendar por WhatsApp
-                </a>
+    <!-- HERO SECTION CON FOTO DE SALA DE ESPERA A LA DERECHA -->
+    <section class="py-16 md:py-24 px-4 border-b border-zinc-800 bg-zinc-900/50">
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            
+            <!-- Columna Izquierda: Textos y Botones -->
+            <div class="text-center md:text-left">
+                <span class="text-gold font-semibold text-sm uppercase tracking-widest bg-zinc-900 px-3 py-1 rounded-full border border-zinc-800 inline-block mb-4">Carepa, Antioquia</span>
+                <h1 class="text-3xl md:text-5xl font-extrabold text-white mb-4 leading-tight">
+                    Cortes de Autor, Barba Tradicional y Estilo Único
+                </h1>
+                <p class="text-gray-300 text-lg mb-8">
+                    Reserva tu turno en línea en menos de 1 minuto y evita filas. Atención especializada para el hombre moderno en un ambiente de primer nivel.
+                </p>
+                <div class="flex flex-col sm:flex-row justify-center md:justify-start gap-4">
+                    <a href="#servicios" class="bg-gold text-zinc-950 font-bold px-6 py-3 rounded-xl shadow-lg hover:bg-yellow-500 transition text-lg text-center">
+                        Ver Servicios y Precios
+                    </a>
+                    <a href="https://wa.me/573000000000?text=Hola,%20quiero%20agendar%20mi%20cita%20para%20hoy." 
+                       target="_blank" 
+                       class="bg-zinc-900 text-white font-semibold px-6 py-3 rounded-xl border border-zinc-700 hover:bg-zinc-800 transition text-lg flex items-center justify-center gap-2">
+                        <i class="fa-brands fa-whatsapp text-green-500 text-xl"></i> Agendar por WhatsApp
+                    </a>
+                </div>
             </div>
+
+            <!-- Columna Derecha: Foto de la Sala de Espera / Local -->
+            <div class="relative">
+                <div class="absolute -inset-1 bg-gradient-to-r from-yellow-600 to-amber-500 rounded-2xl blur opacity-25"></div>
+                <div class="relative overflow-hidden rounded-2xl border border-zinc-800 bg-zinc-900 shadow-2xl h-72 md:h-96">
+                    <img src="https://images.unsplash.com/photo-1517832606293-7ae2fc72c391?auto=format&fit=crop&q=80&w=800" alt="Sala de espera Barber & Spa Club" class="w-full h-full object-cover hover:scale-105 transition duration-500">
+                    <div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black/80 to-transparent p-4 text-center">
+                        <span class="text-xs text-gold uppercase tracking-wider font-semibold">Instalaciones Exclusivas</span>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </section>
 
